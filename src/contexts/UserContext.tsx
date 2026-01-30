@@ -48,7 +48,6 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
   const [isOnboarded, setIsOnboarded] = useState(false);
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [academicDetails, setAcademicDetails] = useState<AcademicDetails | null>(null);
-  // Initialize with empty/zero state for first-time users
   const [progress, setProgress] = useState<LearningProgress>({
     pace: 'medium',
     level: 'beginner',
