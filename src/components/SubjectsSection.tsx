@@ -22,14 +22,14 @@ const getSubjects = (classGrade: string, board: string, electives: string[]): Su
   const classNum = parseInt(classGrade) || 0;
   const baseSubjects: Subject[] = [];
 
-  // Core subjects
+  // Core subjects - all chapters start as not completed for first-time users
   baseSubjects.push({
     name: 'Mathematics',
     icon: '📐',
     color: 'primary',
     chapters: [
-      { id: 'math-1', name: 'Number Systems', completed: true, locked: false },
-      { id: 'math-2', name: 'Algebra Basics', completed: true, locked: false },
+      { id: 'math-1', name: 'Number Systems', completed: false, locked: false },
+      { id: 'math-2', name: 'Algebra Basics', completed: false, locked: false },
       { id: 'math-3', name: 'Geometry', completed: false, locked: false },
       { id: 'math-4', name: 'Statistics', completed: false, locked: true },
       { id: 'math-5', name: 'Probability', completed: false, locked: true },
@@ -41,7 +41,7 @@ const getSubjects = (classGrade: string, board: string, electives: string[]): Su
     icon: '🔬',
     color: 'accent',
     chapters: [
-      { id: 'sci-1', name: 'Matter and Materials', completed: true, locked: false },
+      { id: 'sci-1', name: 'Matter and Materials', completed: false, locked: false },
       { id: 'sci-2', name: 'Living World', completed: false, locked: false },
       { id: 'sci-3', name: 'Motion and Force', completed: false, locked: false },
       { id: 'sci-4', name: 'Energy', completed: false, locked: true },
@@ -53,7 +53,7 @@ const getSubjects = (classGrade: string, board: string, electives: string[]): Su
     icon: '📖',
     color: 'highlight',
     chapters: [
-      { id: 'eng-1', name: 'Reading Comprehension', completed: true, locked: false },
+      { id: 'eng-1', name: 'Reading Comprehension', completed: false, locked: false },
       { id: 'eng-2', name: 'Grammar Essentials', completed: false, locked: false },
       { id: 'eng-3', name: 'Writing Skills', completed: false, locked: false },
       { id: 'eng-4', name: 'Literature', completed: false, locked: true },
