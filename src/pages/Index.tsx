@@ -122,33 +122,28 @@ const Index = () => {
                     <span className="text-3xl">🎯</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-card-foreground">Today's Goal</h3>
-                    <p className="text-sm text-muted-foreground">Complete 2 chapters</p>
+                    <h3 className="font-semibold text-card-foreground">Start Your Journey</h3>
+                    <p className="text-sm text-muted-foreground">Personalized learning awaits</p>
                   </div>
                 </div>
 
                 <div className="space-y-4">
-                  <div className="bg-background rounded-lg p-4">
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm font-medium text-foreground">Math Progress</span>
-                      <span className="text-sm text-primary font-semibold">75%</span>
-                    </div>
-                    <div className="h-2 bg-muted rounded-full overflow-hidden">
-                      <div className="h-full w-3/4 gradient-primary rounded-full" />
-                    </div>
+                  <div className="bg-background rounded-lg p-4 flex items-center gap-3">
+                    <span className="text-2xl">📚</span>
+                    <span className="text-sm font-medium text-foreground">Learn subjects your way</span>
                   </div>
 
-                  <div className="bg-background rounded-lg p-4">
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm font-medium text-foreground">Science Progress</span>
-                      <span className="text-sm text-accent font-semibold">60%</span>
-                    </div>
-                    <div className="h-2 bg-muted rounded-full overflow-hidden">
-                      <div className="h-full w-3/5 gradient-accent rounded-full" />
-                    </div>
+                  <div className="bg-background rounded-lg p-4 flex items-center gap-3">
+                    <span className="text-2xl">🧠</span>
+                    <span className="text-sm font-medium text-foreground">Adaptive to your pace</span>
+                  </div>
+
+                  <div className="bg-background rounded-lg p-4 flex items-center gap-3">
+                    <span className="text-2xl">🌟</span>
+                    <span className="text-sm font-medium text-foreground">Track your achievements</span>
                   </div>
                 </div>
-            </motion.div>
+              </motion.div>
 
               {/* Floating emoji */}
               <motion.div
