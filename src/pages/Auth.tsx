@@ -81,12 +81,8 @@ const Auth = () => {
       });
       navigate('/onboarding');
     } else {
-      // For demo, we'll go to onboarding if not completed
-      if (!isOnboarded) {
-        navigate('/onboarding');
-      } else {
-        navigate('/home');
-      }
+      // Sign in goes directly to home, skip onboarding
+      navigate('/home');
       toast({
         title: 'Welcome back! 👋',
         description: 'Ready to continue learning?',
